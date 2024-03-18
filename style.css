@@ -6,14 +6,15 @@
 body{
       
     font-family: 'Merriweather',serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
+    /*background-image: url(assets/360_F_339060225_w8ob8LjMJzPdEqD9UFxbE6ibcKx8dFrP\ \(1\).jpg);*/
+
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    justify-content: space-around;
     background-color: #fff;
 
 }
@@ -27,7 +28,7 @@ body{
     width: 100%;
 }
 
-.nav_item{
+.button_primary{
     background-image: linear-gradient(
         to right,
         #ff512f 0%,
@@ -40,30 +41,148 @@ body{
     border-radius: 6px;
     font-weight: 600;
 }
-.nav_item:hover{
+.button_primary:hover{
     border: 2px solid #FF6767;
     cursor: pointer;
-    justify-content: space-around;
-    background-color: #fff;
+  /* justify-content: space-around;
+    background-color: #fff;*/
+}
+
+.container{
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hero_image_container{
+    width: 300px;
+}
+
+.hero_image{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+.hero_text
+{
+    font-weight: 800px;
+    font-size: 32px;
+    margin: 20px 0;
+    color: #1D3557;
+}
+/*display flex*/
+.hero_image_flex{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+hero_image_container_flex
+{
+   
+}
+
+/*...*/
+.food_card_description
+{
+    padding: 15px;
+}
+.explore_menu_container
+{
+    position: relative;
+}
+#pizza_card
+{
+    margin-top: -20px;
+    margin-bottom: 30px;;
+}
+.food_card{
+    background-color: #f9f9f9;
+
+}
+.food_card_image_container
+{
+    width: 100%;
+}
+.food_image{
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+
+}
+.explore_menu_text
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size:30px;
+    margin: 20px 0;
+    color: #1d3557;
 }
 
 @media (min-width : 786px)
 {
+    .explore_menu_list
+    {
+       display:flex;
+        gap: 16px;
+        margin-top:40px;
+       padding: 0 30px;
+    }
     .navbar{
         justify-content: space-between;
         padding: 10px 30px;
+    }
+    .hero_container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .explore_menu_gradient_bg
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    z-index: -3;
+    transform: skewY(-5deg);
+    }
+    .container_flexx
+    {
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex;/* NEW - Chrome */
+  display: flex;
     }
 }
 
 @media(min-width:1024px)
 {
+    .container{
+        max-width: 70%;
+    }
     .navbar_brand{
         width: 150px;     
     }
-    .nav_item{
+    .button_primary{
         padding: 20px;
         font: size 20px; ;
     }
+    .hero_description
+    {
+        width: 100%;
+    }
+    .hero_text{
+        width: 50%;
+    }
+    .explore_menu_text{
+        font-size:50px ;
+    }
 }
 
-.
